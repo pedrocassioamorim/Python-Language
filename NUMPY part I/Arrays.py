@@ -28,7 +28,7 @@ print(f' size: {zero_array.size}')
 print()
 
 print("Arrays com UMs: ")
-print("AQUI NO PADRÃO DO NUMPY, COMO FLOAT64")
+print("AQUI NO PADRÃO DO NUMPY part I, COMO FLOAT64")
 print(f' dtype: {one_array.dtype}')
 print(one_array)
 print(f' ndim: {one_array.ndim}')

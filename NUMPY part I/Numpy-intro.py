@@ -1,4 +1,4 @@
-# NUMPY & ARRAYS - O NumPy é um framework muito utilizado para análise de dados
+# NUMPY part I & ARRAYS - O NumPy é um framework muito utilizado para análise de dados
 # e cálculos científicos devido a sua velocidade de processamento.
 # Ele processa vetores, matrizes e tensores (de várias dimensões) com grande eficiência.
 # Além disso, ele opera funções matemáticas sobre essas estruturas de forma esplêndida.
