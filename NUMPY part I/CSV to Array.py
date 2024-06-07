@@ -2,7 +2,7 @@ import numpy as np
 import csv
 
 # LENDO ARQUIVOS CSV
-caminho = '/home/pedro/PycharmProjects/Python-RawLanguageComplete/NUMPY/Base Geral.csv'
+caminho = '/home/pedro/PycharmProjects/Python-RawLanguageComplete/NUMPY part I/Base Geral.csv'
 arquivo = csv.reader(caminho)
 
 # CONVERT FROM CSV TO ARRAY
