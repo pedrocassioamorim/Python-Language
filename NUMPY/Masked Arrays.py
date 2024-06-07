@@ -35,8 +35,9 @@ import numpy.ma as ma
 #     que arrays NumPy padrão. A máscara é preservada durante a indexação e fatiamento.
 
 
-a = np.array([1,2,3,4,5])
-mx = ma.masked_array(a, mask = [0,0,0,1,0]) #
+a = np.array([1,2,3,-1,5])
+mx = ma.masked_array(a, mask = [0,0,0,1,0]) # 0 = não incluir na máscara ; 1 = incluir na máscara
 print(f'Array com o Intruso: {a}')
 print(f'Array sem o Intruso: {mx}')
 print(f'Soma dos elementos desconsiderando o Intruso: {mx.sum()}')
+print(f'Média dos elementos desconsiderando o Intruso: {mx.mean()}')
