@@ -31,3 +31,30 @@ print("Função iloc [ 3 , 3 ]: ") # = LINHA 3 E COLUNA 3 = RETORNA APENAS UM UN
 print(brasil3.iloc[3,3])
 print("Função loc [ 3 ]: ") # LINHA 3 = RETORNA A LINHA INTEIRA
 print(brasil3.loc[3])
+print(brasil3.iloc[3:8])
+print()
+print()
+
+# SET INDEX - TRABALHANDO COM INDEX DE FORMA FÁCIL
+brasil3.set_index('Clube', inplace=True)
+print(brasil3)
+
+# O ILOC ENCONTRA O OBJETO DA LINHA 3, USANDO A NOVA CHAVE
+print(brasil3.iloc[3])
+
+# O LOC ENCONTRA MULTIPLOS VALORES PELO VALOR DE UMA CHAVE
+# CONCATENAÇÃO DE DATAFRAMES
+# USAR SEMPRE O METODO  ==================>  concat([df1,df2])
+# O método append() foi descontinuado.
+membersSP = brasil3.loc['São Paulo']
+membersRM = brasil3.loc['Real Madrid']
+members = pd.concat([membersSP, membersRM])
+print(members)
+
+
+# RESETANDO INDICES NUMÉRICOS
+membersBC = brasil1.loc[(brasil1['Clube'] == 'Barcelona') | (brasil1['Clube'] == 'Real Madrid')]
+membersBC.reset_index(inplace=True)
+membersBC = membersBC.drop(columns=['index'])
+print(membersBC)
+membersBC.to_csv('Brasileiros em Real e Barça')
