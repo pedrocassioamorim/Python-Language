@@ -17,3 +17,17 @@ brasil2 = pd.read_csv('selecao brasileira 2002 (csv).csv') # A PARTIR DE UM ARQU
 print(brasil1.head()) # HEAD: imprime as primeias 5 linhas
 print(brasil2.head()) # HEAD: imprime as primeias 5 linhas
 print(brasil1.tail()) # TAIL: imprime as ultimas 5 linhas
+print(brasil1.info())
+print(brasil1.columns)
+print(brasil1['Nome Completo'])
+brasil3 = brasil1.rename(columns={'Nome Completo': 'Nome Inteiro'})
+print(brasil3)
+
+# ACESSANDO ITENS ESPECIFICOS NO DATAFRAME
+# Consultando dados com o as funções `loc[] e iloc[]`:
+# *Acessando um valor específico do Dataframe;*
+
+print("Função iloc [ 3 , 3 ]: ") # = LINHA 3 E COLUNA 3 = RETORNA APENAS UM UNICO VALOR (MAIS ESPECÍFICO)
+print(brasil3.iloc[3,3])
+print("Função loc [ 3 ]: ") # LINHA 3 = RETORNA A LINHA INTEIRA
+print(brasil3.loc[3])
