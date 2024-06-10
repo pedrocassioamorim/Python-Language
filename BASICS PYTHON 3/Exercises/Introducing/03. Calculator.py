@@ -28,3 +28,11 @@ elif (tipo == "-"):
 elif (tipo == "/"):
     resultado = v1 / v2
 print(f"Resultado: {resultado}")
+print(f"Todos os números pares até o Resultado: {resultado}")
+for i in range(int(resultado)):
+    if i % 2 == 0:
+        print(i)
+        i = i +1
+    else:
+        print("número impar!")
+        i = i +1
