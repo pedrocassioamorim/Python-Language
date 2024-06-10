@@ -32,3 +32,4 @@ if ((valor_do_frete + valor_de_compra >= 100) or (fidelidade)):
     print("O CUPOM de desconto pode ser utilizado: TOME AQUI ABC20")
 else:
     print("CUPOM Inativo")
+
