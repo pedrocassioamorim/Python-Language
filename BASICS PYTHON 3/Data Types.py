@@ -27,3 +27,14 @@ print(type(height))
 print(type(weight))
 print(type(open))
 print(type(close))
+
+# INPUTs
+nome = input("Enter your name: ")
+print(type(nome))
+idade = int(input("Enter your age: "))
+print(type(idade))
+idade_minima = 16
+if (idade >= idade_minima):
+    print("Você pode assistir o filme!")
+else:
+    print("Você não pode assistir o filme!")
