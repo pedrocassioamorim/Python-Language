@@ -29,9 +29,10 @@ print(type(open))
 print(type(close))
 
 # INPUTs
-nome = input("Enter your name: ")
+nome = input("Enter your name: \n") # SEMPRE ENTRA COMO STRING
 print(type(nome))
-idade = int(input("Enter your age: "))
+
+idade = int(input("Enter your age: \n")) # CONVERTENDO PARA INTEIRO COM int()
 print(type(idade))
 idade_minima = 16
 if (idade >= idade_minima):
