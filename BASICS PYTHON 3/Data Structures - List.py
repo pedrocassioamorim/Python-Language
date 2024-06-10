@@ -36,3 +36,15 @@ pessoas = [
     ["Bruno", 27, "(91) 93879-4434"],
     ["Pedro", 28, "(91) 93879-4434"],
 ]
+
+notas = [9, 8.4, 8, 5.9, 2, 8.3, 2]
+total = sum(notas)
+media = total/len(notas)
+print(total)
+print(media)
+for i in range(len(notas)): # LOOP FOR
+    print(notas[i])
+
+
+notas[2] = 100
+print(notas)
